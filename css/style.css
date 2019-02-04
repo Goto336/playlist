@@ -1,3 +1,11 @@
+body{
+     background-image: url("https://www.sidefx.com/media/uploads/story/stories/fx-adventures-in-uncharted-4-a-thiefs-end/uncharted-4_drake-sully-vista1.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 100%;
+            background-attachment: fixed;
+}
+
 h1 {
     text-align: center;
 }
