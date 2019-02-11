@@ -8,13 +8,19 @@ var imageLinks = ["https://image.slidesharecdn.com/how-20to-20make-20your-20char
 
 var artists = ["Justin Timberlake", "Nick Tierre", "Bohnes"];
 
-var songLengths = [400, 330, 330];
+var songLengths = ["4:00", "3:30", "3:30"];
 
 var songLinks = ["https://www.youtube.com/watch?v=FdSRfdu_dLU", "https://www.youtube.com/watch?v=_NhkMga2RZ8&list=LLjiNCV4fQfACeVJTUk9VxMg&index=9&t=0s", "https://www.youtube.com/watch?v=zrFhr2U0ytg"];
 
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
-
+       for(var i = 0; i < songs.length; i++) {
+           $("#images").append("<img src='" + imageLinks[i] + "'>");
+           $("#songs").append("<p>"+ songs[i] + "</p>");
+           $("#artists").append("<p>"+ artists[i] + "</p>");
+           $("#lengths").append("<p>"+ songLengths[i] + "</p>");
+           $("#links").append("<a>"+ songLinks[i] + "</a>");
+       }
 }
 
 function emptySongInfo(){
