@@ -73,6 +73,10 @@ button {
     padding: 5px 10px;
 }
 
+h1{
+ -webkit-animation: rainbow 5s infinite;       
+}
+
 p{
 -webkit-animation: rainbow 5s infinite;    
 }
